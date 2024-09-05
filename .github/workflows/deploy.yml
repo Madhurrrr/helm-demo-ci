@@ -3,7 +3,7 @@ name: Push Image To ACR
 on:
   push:
     branches:
-      - master
+      - main
 jobs:
   deploy:
     runs-on: ubuntu-latest
