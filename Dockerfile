@@ -11,4 +11,4 @@ COPY target/helmdemo-0.0.1-SNAPSHOT.jar /app/helmdemo.jar
 EXPOSE 8080
 
 # Run the application
-CMD ["java", "-jar", "helmdmeo.jar"]
+CMD ["java", "-jar", "helmdemo.jar"]
