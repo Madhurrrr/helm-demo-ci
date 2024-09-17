@@ -41,15 +41,20 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>com.azure</groupId>-->
+<!--			<artifactId>azure-security-keyvault-secrets</artifactId>-->
+<!--			<version>4.8.6</version>-->
+<!--		</dependency>-->
+<!--		<dependency>-->
+<!--			<groupId>com.azure</groupId>-->
+<!--			<artifactId>azure-identity</artifactId>-->
+<!--			<version>1.13.2</version>-->
+<!--		</dependency>-->
 		<dependency>
-			<groupId>com.azure</groupId>
-			<artifactId>azure-security-keyvault-secrets</artifactId>
-			<version>4.8.6</version>
-		</dependency>
-		<dependency>
-			<groupId>com.azure</groupId>
-			<artifactId>azure-identity</artifactId>
-			<version>1.13.2</version>
+			<groupId>com.azure.spring</groupId>
+			<artifactId>azure-spring-boot-starter-keyvault-secrets</artifactId>
+			<version>3.6.0</version>
 		</dependency>
 	</dependencies>
 
