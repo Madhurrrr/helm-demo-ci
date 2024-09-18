@@ -19,9 +19,10 @@ public class HelmdemoApplication {
 	public class HelmdemoController {
 		@Value("${testkey}")
 		private String mySecretProperty;
+		private String myHello="Hello World from helm !";
 		@GetMapping("/hello")
 		public String sayHello() {
-			return "Hello World from helm !";
+			return myHello;
 		}
 		@GetMapping("/vault")
 		public String returnSecret() { return mySecretProperty; }
