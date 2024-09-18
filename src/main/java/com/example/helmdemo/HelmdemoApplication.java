@@ -17,7 +17,7 @@ public class HelmdemoApplication {
 	@RestController
 	@RequestMapping("/api")
 	public class HelmdemoController {
-//		@Value("${testkey}")
+		@Value("${testkey}")
 		private String mySecretProperty;
 		private String myHello="Hello World from helm !";
 		@GetMapping("/hello")
