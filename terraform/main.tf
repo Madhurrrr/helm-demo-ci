@@ -3,7 +3,7 @@ terraform {
     resource_group_name = "teraformDemo"
     storage_account_name = "tfstract"
     container_name = "tfcontainer"
-    key="vaultdemo.vaultstate"
+    key="demovault.vaultstate"
   }
 }
 provider "azurerm" {
@@ -11,15 +11,15 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "rgsa1" {
-  name     = "vaultdemo-resource-group"
+  name     = "demovault-resource-group"
   location = "central US"
 }
 
 resource "azurerm_kubernetes_cluster" "aks1" {
-  name                = "vaultdemo-cluster-1"
+  name                = "demovault-cluster-1"
   location            = azurerm_resource_group.rgsa1.location
   resource_group_name = azurerm_resource_group.rgsa1.name
-  dns_prefix          = "vaultdemocluster"
+  dns_prefix          = "demovaultcluster"
 
   default_node_pool {
     name       = "default"
