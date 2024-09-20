@@ -17,7 +17,6 @@ public class HelmdemoApplication {
 	@RestController
 	@RequestMapping("/api")
 	public class HelmdemoController {
-//		Will uncomment after setup
 		@Value("${testkey}")
 		private String mySecretProperty;
 		private String myHello="Hello World from helm !";
