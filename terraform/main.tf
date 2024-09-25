@@ -21,6 +21,9 @@ resource "azurerm_kubernetes_cluster" "aks1" {
   resource_group_name = azurerm_resource_group.rgsa1.name
   dns_prefix          = "testvaultappcluster"
 
+  key_vault_secrets_provider {
+    secret_rotation_enabled = true
+  }
   default_node_pool {
     name       = "default"
     node_count = 1
