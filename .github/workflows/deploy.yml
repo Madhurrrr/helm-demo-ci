@@ -64,6 +64,7 @@ jobs:
       - name: Build Docker Image
         run: docker build -t ${{ secrets.ACR_LOGIN_SERVER }}/demovaultapp:latest2 .
 
+
       # Step 6: Login to Azure Container Registry (ACR)
       - name: Login to ACR
         run: echo ${{ secrets.ACR_PASSWORD }} | docker login ${{ secrets.ACR_LOGIN_SERVER }} -u ${{ secrets.ACR_USERNAME }} --password-stdin
